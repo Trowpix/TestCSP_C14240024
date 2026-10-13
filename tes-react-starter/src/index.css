@@ -1,0 +1,36 @@
+/* Styling dasar untuk seluruh halaman */
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f7f6; /* Warna latar abu-abu sangat muda biar gak kaku */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Mempercantik input dan select */
+input, select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* Mempercantik efek klik pada tombol */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.96); /* Efek tombol ditekan */
+}

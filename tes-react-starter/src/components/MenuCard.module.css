@@ -1,0 +1,60 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Bayangan lembut */
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-4px); /* Efek kartu naik sedikit saat di-hover */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.habis {
+  background-color: #fafafa;
+  opacity: 0.6;
+}
+
+.badgeHabis {
+  color: #dc3545;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 4px 8px;
+  background-color: #f8d7da;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.card button {
+  margin-top: auto; /* Memaksa tombol selalu berada di bawah kartu */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
